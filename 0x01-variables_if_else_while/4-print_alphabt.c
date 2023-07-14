@@ -9,17 +9,11 @@ int main(void)
 	char ch[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i < 26;)
+	for (i = 0; i < 26; i++)
 {
 	if (i != 4 && i != 16)
 {
 	putchar(ch[i]);
-	i++;
-}
-else
-{
-	continue;
-	i++;
 }
 }
 	putchar('\n');
