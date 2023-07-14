@@ -6,6 +6,12 @@
 */
 int main(void)
 {
-printf("abcdefghijklmnopqrstuvwxyz\n");
-return (0);
+	char ch[26] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (int i = 0; i < 26; i++)
+	{
+	putchar(ch[i]);
+	}
+	putchar('\n');
+	return (0);
 }
