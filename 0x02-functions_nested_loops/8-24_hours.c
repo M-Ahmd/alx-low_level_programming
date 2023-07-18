@@ -6,23 +6,18 @@
 */
 void jack_bauer(void)
 {
-int sec = 0;
-int min = 0;
-while (1 > 0)
-{
-if (sec == 60)
-{
-min++;
-sec = 0;
-}
-else
-{
-printf("%02d:%02d\n", min, sec);
-sec++;
-}
-if (min == 23 && sec == 59)
-{
-break;
-}
-}
+	int hour, minute;
+
+	for (hour = 0; hour <= 23; hour++)
+	{
+		for (minute = 0; minute <= 59; minute++)
+		{
+			_putchar((hour / 10) + '0');
+			_putchar((hour % 10) + '0');
+			_putchar(':');
+			_putchar((minute / 10) + '0');
+			_putchar((minute % 10) + '0');
+			_putchar('\n');
+		}
+	}
 }
