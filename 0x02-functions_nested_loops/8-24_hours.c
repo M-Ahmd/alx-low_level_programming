@@ -10,7 +10,7 @@ int sec = 0;
 int min = 0;
 while (1 > 0)
 {
-if (sec == 100)
+if (sec == 60)
 {
 min++;
 sec = 0;
