@@ -4,7 +4,7 @@
 *Desctiption: A c programm to train about header file
 *Return: Always 0
 */
-int main(void)
+void print_alphabet(void)
 {
 	char ch[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
@@ -14,5 +14,4 @@ int main(void)
 	_putchar(ch[i]);
 	}
 	_putchar('\n');
-	return (0);
 }
