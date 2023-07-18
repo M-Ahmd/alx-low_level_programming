@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-*main - Entry point
+*print_alphabet - Entry point
 *Desctiption: A c programm to train about header file
 *Return: Always 0
 */
