@@ -29,7 +29,7 @@ else
 	{
 	_putchar(',');
 	_putchar(' ');
-	if (res < 10)
+	if (res > 10)
 {
 	_putchar(' ');
 }
