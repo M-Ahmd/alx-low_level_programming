@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *print_to_98 - is a function
 *@n: is a argument
@@ -12,12 +13,12 @@ void print_to_98(int n)
 	{
 	if (i > 10)
 	{
-	_putchar(i + '0');
+	printf("%d", i);
 	}
 	else
 	{
-	_putchar(i / 10 + '0');
-	_putchar(i % 10 + '0');
+	printf("%d", i / 10);
+	printf("%d",i % 10);
 
 	}
 	if (i != 98)
