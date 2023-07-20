@@ -1,0 +1,30 @@
+#include "main.h"
+/**
+*print_triangle - is a function
+*@size: is an argument
+*Return: Always 0
+*/
+void print_triangle(int size)
+{
+int i, j, z;
+int hashTag = 1;
+int number_of_spaces = size - 1;
+
+for (i = 0; i < size; i++)
+{
+
+for (j = 0; j < number_of_spaces; j++)
+{
+	putchar(' ');
+
+}
+for (z = 0; z < hashTag; z++)
+{
+putchar('#');
+}
+	hashTag++;
+	putchar('\n');
+	number_of_spaces--;
+}
+
+}
