@@ -5,31 +5,28 @@
 */
 int main(void)
 {
-	int i;
+	int i = 1;
 
-	for (i = 1; i <= 100; i++)
+	while (i != 101)
 	{
 	if (i % 3 == 0)
 	{
 	printf("Fizz ");
-	continue;
 	}
 	else if (i % 5 == 0)
 	{
 	printf("Buzz ");
-	continue;
 	}
 	else if (i % 3 == 0 && i % 5 == 0)
 	{
 	printf("Fizz Buzz");
-	continue;
 	}
 
 	else
 	{
 	printf("%d ", i);
-	continue;
 	}
+	i++;
 	}
 	putchar ('\n');
 	return (0);
