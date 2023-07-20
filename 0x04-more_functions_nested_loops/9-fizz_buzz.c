@@ -5,8 +5,9 @@
 */
 int main(void)
 {
-	int i = 1;
+	int i;
 
+	i = 1;
 	while (i != 101)
 	{
 	if (i % 3 == 0)
