@@ -6,6 +6,12 @@
 */
 void print_triangle(int size)
 {
+if (size <= 0)
+{
+_putchar ('\n');
+}
+else
+{
 int i, j, z;
 int hashTag;
 int number_of_spaces;
@@ -16,16 +22,16 @@ for (i = 0; i < size; i++)
 
 for (j = 0; j < number_of_spaces; j++)
 {
-	putchar(' ');
+	_putchar(' ');
 
 }
 for (z = 0; z < hashTag; z++)
 {
-putchar('#');
+	_putchar('#');
 }
 	hashTag++;
-	putchar('\n');
+	_putchar('\n');
 	number_of_spaces--;
 }
-
+}
 }
