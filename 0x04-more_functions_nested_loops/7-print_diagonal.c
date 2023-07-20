@@ -13,7 +13,7 @@ void print_diagonal(int n)
 	}
 	else
 	{
-	int number_of_spaces;
+	int number_of_spaces, i;
 
 	for (i = 0; i < n; i++)
 	{
