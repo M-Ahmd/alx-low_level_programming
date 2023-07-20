@@ -7,9 +7,10 @@
 void print_triangle(int size)
 {
 int i, j, z;
-int hashTag = 1;
-int number_of_spaces = size - 1;
-
+int hashTag;
+int number_of_spaces;
+hashTag=1;
+number_of_spaces = size - 1;
 for (i = 0; i < size; i++)
 {
 
