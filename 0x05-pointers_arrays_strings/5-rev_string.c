@@ -16,7 +16,7 @@ void rev_string(char *s)
 	len++;
 	}
 	/*let's revese it*/
-	char arr[len];
+	char *arr;
 	for (i = len - 1; i >= 0; i--)
 	{
 	arr[index] = *(s + i);
