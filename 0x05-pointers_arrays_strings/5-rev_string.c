@@ -6,26 +6,43 @@
 */
 void rev_string(char *s)
 {
-	/*We want to get string length*/
-	int len = 0;
-	int i;
+	char tmp;
+	int i, len, len1;
 
-	while (*(s + len) != '\0')
-	{
-	len++;
-	}
-	/*let's revese it*/
-	char *arr;
-	int index = 0;
+	len = 0;
+	len1 = 0;
 
-	for (i = len - 1; i >= 0; i--)
+	while (s[len] != '\0')
 	{
-	*(arr + index) = *(s + i);
+		len++;
 	}
-	while (arr[index] != '\0')
+
+	len1 = len - 1;
+
+	for (i = 0; i < len / 2; i++)
 	{
-	*(s + index) = *(arr + index);
-	index++;
+		tmp = s[i];
+		s[i] = s[len1];
+		s[len1--] = tmp;
+	}
+	char tmp;
+	int i, len, len1;
+
+	len = 0;
+	len1 = 0;
+
+	while (s[len] != '\0')
+	{
+		len++;
+	}
+
+	len1 = len - 1;
+
+	for (i = 0; i < len / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[len1];
+		s[len1--] = tmp;
 	}
 
 }
