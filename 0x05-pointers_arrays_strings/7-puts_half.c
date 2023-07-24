@@ -9,7 +9,7 @@ void puts_half(char *str)
 
 	/*We want to get string length*/
 	int len = 0;
-	int i;
+	int i = 0;
 
 	while (*(str + len) != '\0')
 	{
