@@ -10,22 +10,22 @@ void puts_half(char *str)
 	/*We want to get string length*/
 	int len = 0;
 	int i = 0;
+	int haf;
 
 	while (*(str + len) != '\0')
 	{
 	len++;
 	}
-	if (len / 2 == 0)
+	haf = len / 2;
+	if (haf == 0)
 	{
-	for (i = len / 2; i < len; i++)
+	for (i = haf + 1; i < len; i++)
 	{
-	i++;
 	_putchar(*(str + i));
 	}
 	}
 	else
 	{
-	i++;
 	for (i = (len - 1) / 2; i < len; i++)
 	{
 	_putchar(*(str + i));
