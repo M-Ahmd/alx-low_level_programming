@@ -34,6 +34,7 @@ char *_strncat(char *dest, char *src, int n)
 	if (counter < n)
 	{
 	dest[j] = src[i];
+	counter++;
 	}
 	else
 	{
