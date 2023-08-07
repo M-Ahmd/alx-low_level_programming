@@ -12,24 +12,21 @@ char *str_concat(char *s1, char *s2)
 {
 	int len1, len2, len, i, j;
 	char *ptr;
-	if (s1 == NULL && s1 == NULL)
+
+	if (s1 == NULL)
 	{
 	len1 = 0;
-	len2 = 0;
 	}
-	else if (s1 == NULL && s2 != NULL)
-	{
-	len1 = 0;
-	len2 = strlen(s2);
-	}
-	else if (s1 != NULL && s2 == NULL)
-        {
-        len1 = strlen(s1);
-        len2 = 0;
-        }
 	else
 	{
 	len1 = strlen(s1);
+	}
+	if (s2 == NULL)
+	{
+	len2 = 0;
+	}
+	else
+	{
 	len2 = strlen(s2);
 	}
 	len = len1 + len2;
