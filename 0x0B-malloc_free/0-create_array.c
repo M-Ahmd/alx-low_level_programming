@@ -8,13 +8,14 @@
 */
 char *create_array(unsigned int size, char c)
 {
+	char *ptr;
 	if (size == 0)
 	{
 	return (NULL);
 	}
 	else
 	{
-	char *ptr = (char *) malloc(sizeof(int) * 1);
+	ptr = (char *) malloc(sizeof(int) * 1);
 
 	*ptr = c;
 	return (ptr);
