@@ -1,7 +1,11 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+*print_dog - is a function
+*@d: is an argument
+*Return: Always 0
+*/
 void print_dog(struct dog *d)
 {
 	if (d->name == NULL)
@@ -9,9 +13,9 @@ void print_dog(struct dog *d)
 	d->name = "nil";
 	}
 	if (d->owner == NULL)
-        {
-        d->owner = "nil";
-        }
+	{
+	d->owner = "nil";
+	}
 	if (d != NULL)
 	{
 	printf("Name: %s\n", d->name);
