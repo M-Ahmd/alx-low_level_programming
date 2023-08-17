@@ -27,4 +27,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	j = 0;
 	}
 	putchar('\n');
+	va_end(ptr);
 }
