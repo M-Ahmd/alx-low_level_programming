@@ -18,11 +18,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	vprintf("%d", ptr);
 	if (i == n - 1)
 	break;
+	if (separator == NULL)
+{
+	continue;
 	while (separator[j] != '\0')
 	{
 	putchar(separator[j]);
 	j++;
 	}
+}
 	j = 0;
 	}
 	putchar('\n');
