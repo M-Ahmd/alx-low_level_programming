@@ -2,31 +2,33 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
-*print_strings - ....................
-*@separator:.........................
-*@n:..................................
-*Return:..............................
-*/
+ * print_strings - prints strings
+ * @separator: separator between strings
+ * @n: number of arguments
+ */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	unsigned int i, j = 0;
-	va_list ptr;
+	unsigned int i;
+	char *str;
 
-	va_start(ptr, n);
+	va_list list;
+
+	va_start(list, n);
+
 	for (i = 0; i < n; i++)
 	{
-	char *str = va_arg(ptr, char *);
-	if (str != NULL)
-	printf("%s", str);
-	else
-	printf("%s", "(nil)");
-	while (separator[j] != '\0' && separator != NULL && i != n - 1)
-	{
-	putchar(separator[j]);
-	j++;
+		str = va_arg(list, char *);
+		if (!str)
+			str = "(nil)";
+		if (!separator)
+			printf("%s", str);
+		else if (separator && i == 0)
+			printf("%s", str);
+		else
+			printf("%s%s", separator, str);
 	}
-	j = 0;
-	}
-	putchar('\n');
-	va_end(ptr);
+
+	printf("\n");
+
+	va_end(list);
 }
