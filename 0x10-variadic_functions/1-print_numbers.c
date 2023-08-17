@@ -16,11 +16,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 	vprintf("%d", ptr);
-	if (i == n - 1)
-	break;
-	if (separator == NULL)
+	if (i != n - 1 && separator != NULL)
 {
-	continue;
 	while (separator[j] != '\0')
 	{
 	putchar(separator[j]);
