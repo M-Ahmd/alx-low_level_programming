@@ -1,24 +1,20 @@
 #include<stdio.h>
-#include<string.h>
-#include <stdbool.h>
-#include <stdlib.h>
 #include "lists.h"
+/**
+*print_list - .......................
+*@h:.................................
+*Return:Always 0
+*/
 size_t print_list(const list_t *h)
 {
-        long unsigned int n = 1;
-	if(h->str == NULL)
+	size_t n = 0;
+
+	while (h != NULL)
 	{
-	printf("[%d] %s\n", 0, "(nil)");
+	printf("[%d] %s\n", h->len, h->str ? h->str : "(nil)");
+
+	h = h->next;
+	n++;
 	}
-	else
-        printf("[%d] %s\n", h->len, strdup(h->str));
-
-
-	if (h->next != NULL)
-        {
-            n++;
-            print_list(h->next);
-        }
-
-    return n;
+	return (n);
 }
